@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React ⚛</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- 1st method to create react element -->
+    <!-- <script type="text/javascript">
+        ReactDOM.render(
+            React.createElement(
+                "h1",
+                null,
+                "Getting started wiht react"
+            ),
+            document.getElementById("root")
+        );
+
+    </script> -->
+
+    <!-- 2nd method to create elements -->
+    <!-- <script type="text/javascript">
+        let ul = React.createElement(
+            "ul",
+            {style:{color:"blue"}}, 
+            React.createElement("li", null, "Monday"),
+            React.createElement("li", null, "Tuesday"),
+            React.createElement("li", null, "Wednesday"),
+        );
+        ReactDOM.render(
+            ul,
+            document.getElementById("root")
+        );
+    </script> -->
+
+    <!-- Using babel -->
+    <!-- <script type="text/babel">
+        ReactDOM.render(
+            <ul>
+                <li>🎂</li> 
+                <li>🥪</li>
+                <li>😂</li>   
+            </ul>,
+            document.getElementById("root")
+        );
+
+    </script> -->
+
+    <script type="text/babel">
+        let cake = "🎂";
+        let sandwich = "🥪";
+        let funny = "😂";
+        let name = "React";
+        ReactDOM.render(
+            <ul>
+                <li>{cake}</li> 
+                <li>{sandwich}</li>
+                <li>{funny}</li>
+                <li>{name}</li>  
+                <li>{name.length}</li> 
+            </ul>,
+            document.getElementById("root")
+        );
+
+    </script>
+
+
+
+</body>
+</html>
